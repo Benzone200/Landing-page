@@ -29,7 +29,7 @@ const Client = () => {
       key={index}
       src={logo}
       alt={`Client logo ${index + 1}`}
-      className="w-5 h-auto md:w-9 lg:w-10 object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
+      className="w-7 h-auto md:w-9 lg:w-10 object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
     />
   ))}
 </div>

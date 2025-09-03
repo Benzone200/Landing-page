@@ -6,7 +6,7 @@ const Navbar = () => {
   const navLinks = ['Home', 'Service', 'Feature', 'Product', 'Testimonial', 'FAQ'];
 
   return (
-    <nav className="bg-[#f5f7fa] py-6 px-6 sm:px-10 md:px-16 lg:px-[100px] relative z-50">
+    <nav className="w-full bg-[#f5f7fa] py-6 px-6 sm:px-10 md:px-16 lg:px-[100px] relative z-50">
       <div className="flex items-center justify-between max-w-[1440px] mx-auto md:gap-6 md:flex-wrap">
         {/* Logo + Brand */}
         <div className="flex items-center space-x-2 md:space-x-4">
@@ -102,11 +102,12 @@ const Navbar = () => {
 
       {/* Overlay */}
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-40 z-30 lg:hidden"
-          onClick={() => setIsOpen(false)}
-        ></div>
-      )}
+  <div
+    className="fixed inset-0 bg-black/30 backdrop-blur-sm z-30 lg:hidden"
+    onClick={() => setIsOpen(false)}
+  ></div>
+)}
+
     </nav>
   );
 };
